@@ -1,2 +1,122 @@
 this is day one of learning git 
 I am learning about the git commands 
+
+## commands 
+
+1. [$ git status]
+
+fatal: not a git repository (or any of the parent directories): .git
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial
+
+
+2. [$ git init]
+
+Initialized empty Git repository in C:/Users/91798/Documents/python/git tutuorial/.git/
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial (master)
+
+
+[$ git status]
+
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.txt.txt
+        utils.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial (master)
+
+
+3. [$ git add . ]
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.txt.txt
+        new file:   utils.txt.txt
+
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial (master)
+
+
+4. [$ git commit -m "version 1" ]
+
+[master (root-commit) 867c54e] version 1
+ 2 files changed, 2 insertions(+)
+ create mode 100644 index.txt.txt
+ create mode 100644 utils.txt.txt
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial (master)
+
+
+5. [$ git log]
+
+commit 867c54e88763ddaea5ca04fd54cbe63be6c40975 (HEAD -> master)
+Author: Arvind Kumar <ak404700@gmail.com>
+Date:   Fri Jun 2 23:39:50 2023 +0530
+
+    version 1
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial (master)
+
+
+
+6. [$ git config --global user.name "Thakur"]
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial (master)
+
+7. [$ git config --global user.email "ak404700@gaml.com"]
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial (master)
+
+[$ git status]
+
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.txt.txt
+        modified:   utils.txt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial (master)
+
+
+[$ git add . ]
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial (master)
+$ git commit -m "version 2"
+[master 4dfd93a] version 2
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial (master)
+
+
+[$ git log]
+
+commit 4dfd93a42415ddbf3e258496efac467222761d5b (HEAD -> master)
+Author: Thakur <ak404700@gaml.com>
+Date:   Fri Jun 2 23:43:58 2023 +0530
+
+    version 2
+
+commit 867c54e88763ddaea5ca04fd54cbe63be6c40975
+Author: Arvind Kumar <ak404700@gmail.com>
+Date:   Fri Jun 2 23:39:50 2023 +0530
+
+    version 1
+
+91798@LAPTOP-7R4ERSN0 MINGW64 ~/Documents/python/git tutuorial (master)
+$
